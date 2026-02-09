@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - FIFTY ONE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">FIFTY ONE</a></h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">INICIO</a>
+                <a href="productos.html" class="nav-link">PRODUCTOS</a>
+                <a href="categorias.html" class="nav-link">CATEGORIAS</a>
+                <a href="promociones.html" class="nav-link">PROMOCIONES</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn">🔍</button>
+                <button class="cart-btn">🛒</button>
+                <button class="user-btn active">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="register-container-enhanced">
+        <!-- Floating particles -->
+        <div class="auth-particles">
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+        </div>
+        
+        <div class="auth-container">
+            <div class="register-card-enhanced">
+                <div class="register-header-enhanced">
+                    <h1>Crear Cuenta</h1>
+                    <p>Únete a la familia FIFTY ONE</p>
+                </div>
+
+                <form class="register-form-enhanced" id="register-form">
+                    <div class="form-row">
+                        <div class="form-group-enhanced">
+                            <input type="text" id="first-name" name="firstName" required placeholder="Tu nombre" class="form-input-enhanced">
+                            <label for="first-name" class="form-label-enhanced">Nombre</label>
+                        </div>
+                        <div class="form-group-enhanced">
+                            <input type="text" id="last-name" name="lastName" required placeholder="Tu apellido" class="form-input-enhanced">
+                            <label for="last-name" class="form-label-enhanced">Apellido</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group-enhanced">
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com" class="form-input-enhanced">
+                        <label for="email" class="form-label-enhanced">Correo Electrónico</label>
+                    </div>
+
+                    <div class="form-group-enhanced">
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 890" class="form-input-enhanced">
+                        <label for="phone" class="form-label-enhanced">Teléfono</label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group-enhanced">
+                            <input type="password" id="password" name="password" required minlength="6" placeholder="Mínimo 6 caracteres" class="form-input-enhanced">
+                            <label for="password" class="form-label-enhanced">Contraseña</label>
+                            <small class="form-help">Debe contener al menos 6 caracteres para mayor seguridad</small>
+                        </div>
+                        <div class="form-group-enhanced">
+                            <input type="password" id="confirm-password" name="confirmPassword" required placeholder="Confirma tu contraseña" class="form-input-enhanced">
+                            <label for="confirm-password" class="form-label-enhanced">Confirmar Contraseña</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group-enhanced">
+                            <input type="date" id="birth-date" name="birthDate" class="form-input-enhanced">
+                            <label for="birth-date" class="form-label-enhanced">Fecha de Nacimiento</label>
+                        </div>
+                        <div class="form-group-enhanced">
+                            <select id="gender" name="gender" class="form-input-enhanced">
+                                <option value="">Seleccionar género</option>
+                                <option value="male">Masculino</option>
+                                <option value="female">Femenino</option>
+                                <option value="other">Otro</option>
+                                <option value="prefer-not-to-say">Prefiero no decir</option>
+                            </select>
+                            <label for="gender" class="form-label-enhanced">Género</label>
+                        </div>
+                    </div>
+
+                    <div class="register-options-enhanced">
+                        <label class="register-checkbox-enhanced">
+                            <input type="checkbox" id="accept-terms" required>
+                            <span class="register-checkmark-enhanced"></span>
+                            Acepto los <a href="#" target="_blank">Términos y Condiciones</a> y la <a href="#" target="_blank">Política de Privacidad</a>
+                        </label>
+                        
+                        <label class="register-checkbox-enhanced">
+                            <input type="checkbox" id="accept-newsletter">
+                            <span class="register-checkmark-enhanced"></span>
+                            Quiero recibir ofertas exclusivas y notificaciones por email
+                        </label>
+                    </div>
+
+                    <button type="submit" class="register-submit-enhanced">Crear Mi Cuenta VIP</button>
+                </form>
+
+                <div class="register-divider-enhanced">
+                    <span>o regístrate con</span>
+                </div>
+
+                <div class="register-social-enhanced">
+                    <button class="register-social-btn-enhanced google">
+                        <span class="register-social-icon-enhanced">🔍</span>
+                        Registrarse con Google
+                    </button>
+                    <button class="register-social-btn-enhanced facebook">
+                        <span class="register-social-icon-enhanced">📘</span>
+                        Registrarse con Facebook
+                    </button>
+                </div>
+
+                <div class="register-footer-enhanced">
+                    <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                </div>
+            </div>
+
+            <div class="register-benefits-enhanced">
+                <h3>🎉 Beneficios VIP Exclusivos</h3>
+                <ul>
+                    <li data-icon="🎁"><strong>Bienvenida Especial</strong> - 20% OFF en tu primera compra</li>
+                    <li data-icon="🚚"><strong>Envío Premium</strong> - Gratis en pedidos superiores a $50</li>
+                    <li data-icon="⭐"><strong>Acceso VIP</strong> - Ofertas exclusivas y lanzamientos anticipados</li>
+                    <li data-icon="🏆"><strong>Programa de Puntos</strong> - Gana recompensas con cada compra</li>
+                    <li data-icon="💳"><strong>Checkout Express</strong> - Compra rápida con datos guardados</li>
+                    <li data-icon="🔔"><strong>Alertas Premium</strong> - Notificaciones de productos y ofertas</li>
+                    <li data-icon="🎯"><strong>Recomendaciones AI</strong> - Productos personalizados para tu estilo</li>
+                    <li data-icon="💎"><strong>Soporte Priority</strong> - Atención al cliente prioritaria</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FIFTY ONE</h4>
+                    <p>Ropa oversize de calidad premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="categorias.html">Categorías</a></li>
+                        <li><a href="promociones.html">Promociones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: info@fiftyone.com</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script>
+        // Initialize auth functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const authManager = new AuthManager();
+            authManager.initRegister();
+        });
+    </script>
+</body>
+</html>

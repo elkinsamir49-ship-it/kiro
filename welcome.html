@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - FIFTY ONE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="welcome-container">
+        <!-- Floating decorative elements -->
+        <div class="floating-element">🛍️</div>
+        <div class="floating-element">✨</div>
+        <div class="floating-element">👕</div>
+        
+        <div class="welcome-content">
+            <div class="welcome-logo">
+                <h1>FIFTY ONE</h1>
+                <p>Ropa Oversize Premium</p>
+            </div>
+            
+            <div class="welcome-message">
+                <h2>¡Bienvenido a nuestra tienda exclusiva!</h2>
+                <p>Para acceder a nuestra colección premium de ropa oversize y disfrutar de una experiencia de compra personalizada, necesitas iniciar sesión o crear una cuenta nueva.</p>
+            </div>
+
+            <div class="welcome-actions">
+                <a href="login.html" class="btn-primary btn-large">Iniciar Sesión</a>
+                <a href="register.html" class="btn-secondary btn-large">Crear Cuenta</a>
+            </div>
+
+            <div class="welcome-features">
+                <div class="feature">
+                    <div class="feature-icon">🛍️</div>
+                    <h3>Productos Exclusivos</h3>
+                    <p>Ropa oversize de la más alta calidad con diseños únicos</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Envío Gratis</h3>
+                    <p>En compras mayores a $75 con entrega rápida y segura</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💳</div>
+                    <h3>Pago Seguro</h3>
+                    <p>Transacciones 100% protegidas con múltiples métodos de pago</p>
+                </div>
+            </div>
+
+            <div class="welcome-demo">
+                <p><small>¿Solo quieres echar un vistazo? <a href="#" id="demo-access">Acceso de demostración</a></small></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user is already logged in
+            const authManager = new AuthManager();
+            if (authManager.isLoggedIn()) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Demo access
+            document.getElementById('demo-access').addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Create demo user
+                const demoUser = {
+                    id: 999,
+                    firstName: 'Demo',
+                    lastName: 'User',
+                    email: 'demo@fiftyone.com',
+                    loginTime: new Date().toISOString(),
+                    isDemo: true
+                };
+                
+                sessionStorage.setItem('currentUser', JSON.stringify(demoUser));
+                authManager.currentUser = demoUser;
+                authManager.showNotification('¡Acceso de demostración activado!', 'success');
+                
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1500);
+            });
+        });
+    </script>
+
+    <style>
+        .welcome-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .welcome-content {
+            background: var(--white);
+            border-radius: 2rem;
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-logo h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .welcome-logo p {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .welcome-message h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .welcome-message p {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+        }
+
+        .welcome-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .welcome-actions a {
+            text-decoration: none;
+            min-width: 150px;
+        }
+
+        .welcome-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .welcome-demo {
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .welcome-demo a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .welcome-demo a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-content {
+                padding: 2rem;
+            }
+            
+            .welcome-logo h1 {
+                font-size: 2.5rem;
+            }
+            
+            .welcome-message h2 {
+                font-size: 1.5rem;
+            }
+            
+            .welcome-actions {
+                flex-direction: column;
+            }
+            
+            .welcome-features {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</body>
+</html>

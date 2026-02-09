@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - FIFTY ONE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">FIFTY ONE</a></h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">INICIO</a>
+                <a href="productos.html" class="nav-link">PRODUCTOS</a>
+                <a href="categorias.html" class="nav-link">CATEGORIAS</a>
+                <a href="promociones.html" class="nav-link active">PROMOCIONES</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn">🔍</button>
+                <button class="cart-btn">🛒</button>
+                <button class="user-btn" id="user-btn">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="app">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Promociones Especiales</h1>
+                <p>Aprovecha nuestras ofertas exclusivas en ropa oversize</p>
+            </div>
+        </section>
+
+        <!-- Promotions Grid -->
+        <section class="promotions-section">
+            <div class="container">
+                <div class="promotions-grid">
+                    <!-- Featured Promotion -->
+                    <div class="promotion-card featured">
+                        <div class="promotion-badge">🔥 OFERTA ESPECIAL</div>
+                        <div class="promotion-content">
+                            <h2>50% OFF en Segunda Prenda</h2>
+                            <p>Compra cualquier producto y llévate el segundo con 50% de descuento</p>
+                            <div class="promotion-code">Código: <strong>FIFTY50</strong></div>
+                            <button class="btn-primary">Aplicar Oferta</button>
+                        </div>
+                    </div>
+
+                    <!-- Regular Promotions -->
+                    <div class="promotion-card">
+                        <div class="promotion-badge">💰 DESCUENTO</div>
+                        <div class="promotion-content">
+                            <h3>Envío Gratis</h3>
+                            <p>En compras mayores a $75</p>
+                            <div class="promotion-code">Código: <strong>FREESHIPING</strong></div>
+                            <button class="btn-secondary">Ver Detalles</button>
+                        </div>
+                    </div>
+
+                    <div class="promotion-card">
+                        <div class="promotion-badge">🎁 REGALO</div>
+                        <div class="promotion-content">
+                            <h3>3x2 en Camisetas</h3>
+                            <p>Llévate 3 camisetas y paga solo 2</p>
+                            <div class="promotion-code">Código: <strong>3X2SHIRTS</strong></div>
+                            <button class="btn-secondary">Ver Camisetas</button>
+                        </div>
+                    </div>
+
+                    <div class="promotion-card">
+                        <div class="promotion-badge">⭐ NUEVO</div>
+                        <div class="promotion-content">
+                            <h3>15% OFF Primera Compra</h3>
+                            <p>Descuento especial para nuevos clientes</p>
+                            <div class="promotion-code">Código: <strong>WELCOME15</strong></div>
+                            <button class="btn-secondary">Registrarse</button>
+                        </div>
+                    </div>
+
+                    <div class="promotion-card">
+                        <div class="promotion-badge">🏷️ LIQUIDACIÓN</div>
+                        <div class="promotion-content">
+                            <h3>Hasta 40% OFF</h3>
+                            <p>En productos seleccionados de temporada pasada</p>
+                            <div class="promotion-code">Sin código necesario</div>
+                            <button class="btn-secondary">Ver Ofertas</button>
+                        </div>
+                    </div>
+
+                    <div class="promotion-card">
+                        <div class="promotion-badge">📱 DIGITAL</div>
+                        <div class="promotion-content">
+                            <h3>10% OFF Suscripción</h3>
+                            <p>Suscríbete al newsletter y recibe descuentos exclusivos</p>
+                            <div class="promotion-code">Código: <strong>NEWSLETTER10</strong></div>
+                            <button class="btn-secondary">Suscribirse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>¡No te pierdas nuestras ofertas!</h2>
+                    <p>Suscríbete a nuestro newsletter y recibe promociones exclusivas</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Products -->
+        <section class="promo-products-section">
+            <div class="container">
+                <h2>Productos en Promoción</h2>
+                <div class="products-grid" id="promo-products-container">
+                    <!-- Promotional products will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FIFTY ONE</h4>
+                    <p>Ropa oversize de calidad premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="categorias.html">Categorías</a></li>
+                        <li><a href="promociones.html">Promociones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: info@fiftyone.com</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <div class="cart-header">
+                <h2>🛒 Tu Carrito</h2>
+                <span class="close cart-close">&times;</span>
+            </div>
+            <div id="cart-body"></div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <h3>Total: <span id="cart-total-amount">$0.00</span></h3>
+                </div>
+                <div class="cart-actions">
+                    <button id="clear-cart-btn" class="btn-secondary">Vaciar Carrito</button>
+                    <button id="checkout-btn" class="btn-primary">Proceder al Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content checkout-modal-content">
+            <div class="checkout-header">
+                <h2>💳 Checkout</h2>
+                <span class="close checkout-close">&times;</span>
+            </div>
+            <div class="checkout-body">
+                <div class="checkout-sections">
+                    <div class="checkout-form">
+                        <h3>Información de Envío</h3>
+                        <form id="checkout-form">
+                            <div class="form-group">
+                                <label for="customer-name">Nombre Completo *</label>
+                                <input type="text" id="customer-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-email">Email *</label>
+                                <input type="email" id="customer-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Teléfono *</label>
+                                <input type="tel" id="customer-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-address">Dirección *</label>
+                                <textarea id="customer-address" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-city">Ciudad *</label>
+                                <input type="text" id="customer-city" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customer-state">Estado/Provincia</label>
+                                    <input type="text" id="customer-state">
+                                </div>
+                                <div class="form-group">
+                                    <label for="customer-zip">Código Postal *</label>
+                                    <input type="text" id="customer-zip" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-notes">Notas del Pedido</label>
+                                <textarea id="order-notes" rows="2" placeholder="Instrucciones especiales..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Resumen del Pedido</h3>
+                        <div id="checkout-items"></div>
+                        <div class="order-totals">
+                            <div class="total-line">
+                                <span>Subtotal:</span>
+                                <span id="order-subtotal">$0.00</span>
+                            </div>
+                            <div class="total-line">
+                                <span>Envío:</span>
+                                <span id="order-shipping">$5.99</span>
+                            </div>
+                            <div class="total-line total-final">
+                                <span>Total:</span>
+                                <span id="order-total">$0.00</span>
+                            </div>
+                        </div>
+                        <button type="submit" form="checkout-form" class="btn-primary btn-large">
+                            Confirmar Pedido
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content success-modal-content">
+            <div class="success-content">
+                <div class="success-icon">✅</div>
+                <h2>¡Pedido Confirmado!</h2>
+                <p>Tu pedido ha sido procesado exitosamente.</p>
+                <div id="order-details"></div>
+                <button id="continue-shopping" class="btn-primary">Continuar Comprando</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/app.js"></script>
+    
+    <script>
+        // Check authentication first
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentUser = localStorage.getItem('currentUser') || sessionStorage.getItem('currentUser');
+            if (!currentUser) {
+                window.location.href = 'welcome.html';
+                return;
+            }
+            
+            // Promotions-specific functionality
+            // Newsletter form
+            const newsletterForm = document.getElementById('newsletter-form');
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                alert(`¡Gracias por suscribirte! Te enviaremos ofertas exclusivas a ${email}`);
+                this.reset();
+            });
+
+            // Load promotional products
+            if (window.FiftyOne && window.FiftyOne.model) {
+                const allProducts = window.FiftyOne.model.getAllProducts();
+                const promoProducts = allProducts.slice(0, 3); // Show first 3 as promotional
+                
+                if (window.FiftyOne.view) {
+                    const promoContainer = document.getElementById('promo-products-container');
+                    window.FiftyOne.view.productsContainer = promoContainer;
+                    window.FiftyOne.view.renderProducts(promoProducts);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

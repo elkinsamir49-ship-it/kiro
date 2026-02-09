@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - FIFTY ONE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#667eea">
+    <meta name="color-scheme" content="light dark">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">FIFTY ONE</a></h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">INICIO</a>
+                <a href="productos.html" class="nav-link">PRODUCTOS</a>
+                <a href="categorias.html" class="nav-link">CATEGORIAS</a>
+                <a href="promociones.html" class="nav-link">PROMOCIONES</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Buscar">🔍</button>
+                <button class="cart-btn" aria-label="Carrito de compras">🛒</button>
+                <button class="user-btn active" aria-label="Cuenta de usuario">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="login-container">
+        <!-- Floating particles -->
+        <div class="auth-particles">
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+            <div class="auth-particle"></div>
+        </div>
+        
+        <div class="auth-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <h1>Iniciar Sesión</h1>
+                    <p>Bienvenido de vuelta a FIFTY ONE</p>
+                </div>
+
+                <form class="login-form" id="login-form" novalidate>
+                    <div class="form-group-enhanced">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="Ingresa tu correo electrónico"
+                            autocomplete="email"
+                            aria-describedby="email-error"
+                            class="form-input-enhanced"
+                        >
+                        <label for="email" class="form-label-enhanced">Correo Electrónico</label>
+                        <div id="email-error" class="error-message" role="alert"></div>
+                    </div>
+
+                    <div class="form-group-enhanced">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            required 
+                            placeholder="Ingresa tu contraseña"
+                            autocomplete="current-password"
+                            aria-describedby="password-error"
+                            class="form-input-enhanced"
+                        >
+                        <label for="password" class="form-label-enhanced">Contraseña</label>
+                        <div id="password-error" class="error-message" role="alert"></div>
+                    </div>
+
+                    <div class="login-options">
+                        <label class="login-checkbox">
+                            <input type="checkbox" id="remember-me" name="remember-me">
+                            <span class="login-checkmark" aria-hidden="true"></span>
+                            Recordar mi sesión
+                        </label>
+                        <a href="#" class="login-forgot">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="login-submit" aria-describedby="login-status">
+                        <span>Iniciar Sesión</span>
+                    </button>
+                    <div id="login-status" class="status-message" role="status" aria-live="polite"></div>
+                </form>
+
+                <div class="login-divider" role="separator" aria-label="O continúa con redes sociales">
+                    <span>o continúa con</span>
+                </div>
+
+                <div class="login-social">
+                    <button class="login-social-btn google" type="button">
+                        <span class="social-icon" aria-hidden="true">🔍</span>
+                        <span>Continuar con Google</span>
+                    </button>
+                    <button class="login-social-btn facebook" type="button">
+                        <span class="social-icon" aria-hidden="true">📘</span>
+                        <span>Continuar con Facebook</span>
+                    </button>
+                </div>
+
+                <div class="login-footer-link-enhanced">
+                    <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+                </div>
+            </div>
+
+            <div class="auth-benefits">
+                <h3>🚀 Tu Cuenta FIFTY ONE</h3>
+                <ul>
+                    <li data-icon="✨"><strong>Experiencia Premium</strong> - Acceso completo a todas las funciones exclusivas</li>
+                    <li data-icon="📦"><strong>Seguimiento Avanzado</strong> - Monitorea tus pedidos en tiempo real con notificaciones</li>
+                    <li data-icon="💎"><strong>Ofertas Exclusivas</strong> - Descuentos especiales y acceso anticipado a ventas</li>
+                    <li data-icon="❤️"><strong>Lista de Favoritos</strong> - Guarda y organiza tus productos preferidos</li>
+                    <li data-icon="⚡"><strong>Checkout Express</strong> - Compra con un solo clic usando datos guardados</li>
+                    <li data-icon="🔔"><strong>Notificaciones Smart</strong> - Alertas personalizadas de productos y ofertas</li>
+                    <li data-icon="🎯"><strong>Recomendaciones AI</strong> - Productos personalizados basados en tu estilo</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FIFTY ONE</h4>
+                    <p>Ropa oversize de calidad premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="categorias.html">Categorías</a></li>
+                        <li><a href="promociones.html">Promociones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: info@fiftyone.com</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script>
+        // Initialize modern auth functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const authManager = new AuthManager();
+            authManager.initLogin();
+            
+            // Modern form validation
+            const form = document.getElementById('login-form');
+            const inputs = form.querySelectorAll('input[required]');
+            
+            inputs.forEach(input => {
+                input.addEventListener('blur', validateField);
+                input.addEventListener('input', clearErrors);
+            });
+            
+            function validateField(e) {
+                const field = e.target;
+                const errorDiv = document.getElementById(field.name + '-error');
+                
+                if (!field.validity.valid) {
+                    field.classList.add('error');
+                    if (errorDiv) {
+                        errorDiv.textContent = getErrorMessage(field);
+                        errorDiv.style.display = 'block';
+                    }
+                } else {
+                    field.classList.remove('error');
+                    if (errorDiv) {
+                        errorDiv.style.display = 'none';
+                    }
+                }
+            }
+            
+            function clearErrors(e) {
+                const field = e.target;
+                if (field.classList.contains('error') && field.validity.valid) {
+                    field.classList.remove('error');
+                    const errorDiv = document.getElementById(field.name + '-error');
+                    if (errorDiv) {
+                        errorDiv.style.display = 'none';
+                    }
+                }
+            }
+            
+            function getErrorMessage(field) {
+                if (field.validity.valueMissing) {
+                    return 'Este campo es obligatorio';
+                }
+                if (field.validity.typeMismatch && field.type === 'email') {
+                    return 'Por favor ingresa un email válido';
+                }
+                return 'Por favor verifica este campo';
+            }
+        });
+    </script>
+</body>
+</html>
